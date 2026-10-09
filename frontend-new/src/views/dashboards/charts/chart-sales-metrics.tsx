@@ -5,7 +5,7 @@ import { Bar, BarChart, Label, Pie, PieChart } from 'recharts'
 import {
   TrendingUpIcon,
   BadgePercentIcon,
-  DollarSignIcon,
+  IndianRupee,
   ShoppingBagIcon,
   ChartNoAxesCombinedIcon,
   CirclePercentIcon
@@ -46,17 +46,17 @@ const MetricsData = [
   {
     icons: <TrendingUpIcon className='size-5' />,
     title: 'Sales trend',
-    value: '$11,548'
+    value: '?11,548'
   },
   {
     icons: <BadgePercentIcon className='size-5' />,
     title: 'Discount offers',
-    value: '$1,326'
+    value: '?1,326'
   },
   {
-    icons: <DollarSignIcon className='size-5' />,
+    icons: <IndianRupee className='size-5' />,
     title: 'Net profit',
-    value: '$17,356'
+    value: '?17,356'
   },
   {
     icons: <ShoppingBagIcon className='size-5' />,
