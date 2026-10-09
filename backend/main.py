@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Dict, Any
-from agent import chat_with_agent
+from agent import chat_with_agent, get_dashboard_metrics
 
 app = FastAPI(title="Order Assistant API")
 
@@ -24,6 +24,10 @@ class ChatResponse(BaseModel):
 @app.get("/")
 def read_root():
     return {"message": "Order Assistant API is running."}
+
+@app.get("/api/dashboard")
+def read_dashboard_metrics():
+    return get_dashboard_metrics()
 
 @app.post("/chat", response_model=ChatResponse)
 async def chat_endpoint(request: ChatRequest):

@@ -62,6 +62,42 @@ def get_top_customer() -> dict:
         "total_spent_inr": int(top_customer["total_inr"])
     }
 
+def get_dashboard_metrics() -> dict:
+    """Calculate metrics for the frontend dashboard."""
+    # Ensure date format
+    df_temp = df.copy()
+    df_temp['order_date'] = pd.to_datetime(df_temp['order_date'])
+    
+    total_revenue = int(df_temp["total_inr"].sum())
+    total_orders = len(df_temp)
+    
+    # Monthly revenue (Jun, Jul, Aug, Sep)
+    df_temp['month'] = df_temp['order_date'].dt.strftime('%b')
+    monthly_revenue = df_temp.groupby('month')['total_inr'].sum().reset_index()
+    
+    # Sort months manually to ensure correct chronological order
+    months = ["Jun", "Jul", "Aug", "Sep"]
+    monthly_data = []
+    for m in months:
+        val = monthly_revenue[monthly_revenue['month'] == m]['total_inr']
+        monthly_data.append({"name": m, "revenue": int(val.iloc[0]) if not val.empty else 0})
+        
+    # Status Counts
+    status_counts = df_temp['status'].value_counts().to_dict()
+    
+    # Top Category
+    category_revenue = df_temp.groupby('category')['total_inr'].sum().reset_index()
+    category_revenue = category_revenue.sort_values(by="total_inr", ascending=False)
+    top_category = category_revenue.iloc[0]['category'] if not category_revenue.empty else "N/A"
+    
+    return {
+        "totalRevenue": total_revenue,
+        "totalOrders": total_orders,
+        "monthlyData": monthly_data,
+        "statusCounts": status_counts,
+        "topCategory": top_category
+    }
+
 system_prompt = """You are the Order Assistant, an AI that helps users with their e-commerce store queries.
 You have access to a dataset of 60 orders from June to September 2026.
 Use the provided tools to fetch order data and calculate metrics.
