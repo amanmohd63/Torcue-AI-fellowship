@@ -6,7 +6,7 @@ A full-stack web application with an AI assistant that answers questions about a
 
 - **Frontend**: React + Vite
 - **Backend**: Python + FastAPI
-- **AI Integration**: Gemini API (gemini-1.5-pro) with function calling
+- **AI Integration**: Gemini API (gemini-2.5-flash default) with function calling
 - **Data processing**: Pandas (reading from `orders.csv`)
 
 ## Prerequisites
@@ -38,7 +38,9 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Create a .env file INSIDE the `backend` directory and add your Gemini API Key
+# You can also specify the model using GEMINI_MODEL
 echo "GEMINI_API_KEY=your_gemini_api_key_here" > .env
+echo "GEMINI_MODEL=gemini-2.5-flash" >> .env
 
 # Run the FastAPI server
 uvicorn main:app --reload
