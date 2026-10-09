@@ -6,14 +6,14 @@ A full-stack web application with an AI assistant that answers questions about a
 
 - **Frontend**: React + Vite
 - **Backend**: Python + FastAPI
-- **AI Integration**: OpenAI API (gpt-4o-mini) with function calling
+- **AI Integration**: Gemini API (gemini-1.5-flash) with function calling
 - **Data processing**: Pandas (reading from `orders.csv`)
 
 ## Prerequisites
 
 - Node.js (v18+)
 - Python (3.9+)
-- An OpenAI API Key
+- A Gemini API Key
 
 ## Setup & Running Locally
 
@@ -37,8 +37,8 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
-# Create a .env file and add your OpenAI Key
-echo "OPENAI_API_KEY=your_openai_api_key_here" > .env
+# Create a .env file INSIDE the `backend` directory and add your Gemini API Key
+echo "GEMINI_API_KEY=your_gemini_api_key_here" > .env
 
 # Run the FastAPI server
 uvicorn main:app --reload
@@ -53,7 +53,8 @@ Open a new terminal and navigate to the frontend directory:
 cd frontend
 npm install
 
-# Optional: Set backend URL if not running on localhost:8000
+# Optional: If your backend is not on localhost:8000, create a .env file 
+# INSIDE the `frontend` directory with the following variable:
 # echo "VITE_BACKEND_URL=http://localhost:8000" > .env
 
 npm run dev
@@ -71,7 +72,7 @@ pytest test_main.py
 
 ## Deployment
 
-- **Backend** is deployed using Render. (`render.yaml` provided). Make sure to set `OPENAI_API_KEY` in the Render dashboard.
+- **Backend** is deployed using Render. (`render.yaml` provided). Make sure to set `GEMINI_API_KEY` in the Render dashboard.
 - **Frontend** is deployed using Vercel. Set `VITE_BACKEND_URL` in the Vercel project settings to point to your deployed Render URL.
 
 Live URLs:

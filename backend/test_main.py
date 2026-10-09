@@ -21,11 +21,11 @@ def test_chat_invalid_messages():
 # Testing Tool Functions locally
 def test_get_order_by_id_not_found():
     res = get_order_by_id("INVALID-ID")
-    assert "not found" in res
+    assert "error" in res
 
 def test_filter_orders():
     res = filter_orders(status="Cancelled")
-    assert "count" in res or "No orders found" in res
+    assert "count" in res or "message" in res
     
 def test_calculate_revenue():
     res = calculate_revenue(category="Electronics", month=8)
