@@ -1,0 +1,61 @@
+order_id,order_date,customer_name,city,product,category,quantity,unit_price_inr,total_inr,payment_method,status
+ORD-1001,2026-07-05,Diya,Mumbai,Office Chair,Home,1,4000,4000,UPI,Delivered
+ORD-1002,2026-06-25,Aanya,Delhi,Desk Lamp,Home,1,800,800,Debit Card,Processing
+ORD-1003,2026-08-08,Ayaan,Pune,Office Chair,Home,3,4000,12000,UPI,Delivered
+ORD-1004,2026-06-28,Aaradhya,Hyderabad,Sneakers,Clothing,1,2500,2500,Net Banking,Processing
+ORD-1005,2026-08-26,Atharv,Mumbai,T-Shirt,Clothing,3,500,1500,UPI,Delivered
+ORD-1006,2026-07-24,Atharv,Delhi,Desk Lamp,Home,3,800,2400,Net Banking,Cancelled
+ORD-1007,2026-08-18,Ishaan,Mumbai,Sneakers,Clothing,1,2500,2500,UPI,Shipped
+ORD-1008,2026-07-16,Saanvi,Pune,Smartphone,Electronics,4,20000,80000,Net Banking,Delivered
+ORD-1009,2026-08-21,Saanvi,Mumbai,Office Chair,Home,5,4000,20000,UPI,Delivered
+ORD-1010,2026-06-30,Aarav,Hyderabad,Sneakers,Clothing,4,2500,10000,Net Banking,Shipped
+ORD-1011,2026-07-27,Aarav,Delhi,Smartphone,Electronics,4,20000,80000,Debit Card,Cancelled
+ORD-1012,2026-08-19,Reyansh,Pune,Jacket,Clothing,3,3000,9000,Credit Card,Processing
+ORD-1013,2026-08-28,Aadhya,Pune,Headphones,Electronics,3,2000,6000,Credit Card,Delivered
+ORD-1014,2026-07-03,Reyansh,Chennai,Jeans,Clothing,3,1500,4500,UPI,Delivered
+ORD-1015,2026-07-30,Saanvi,Hyderabad,Monitor,Electronics,4,8000,32000,UPI,Delivered
+ORD-1016,2026-07-29,Saanvi,Pune,Coffee Maker,Home,4,2500,10000,UPI,Processing
+ORD-1017,2026-09-03,Aditya,Hyderabad,Coffee Maker,Home,4,2500,10000,Debit Card,Delivered
+ORD-1018,2026-06-24,Pari,Bengaluru,Office Chair,Home,1,4000,4000,Credit Card,Delivered
+ORD-1019,2026-08-27,Nandini,Chennai,Headphones,Electronics,2,2000,4000,Credit Card,Delivered
+ORD-1020,2026-09-20,Shaurya,Hyderabad,Headphones,Electronics,5,2000,10000,Debit Card,Delivered
+ORD-1021,2026-06-08,Ananya,Mumbai,Coffee Maker,Home,2,2500,5000,Debit Card,Delivered
+ORD-1022,2026-09-11,Pari,Delhi,Coffee Maker,Home,1,2500,2500,Debit Card,Processing
+ORD-1023,2026-08-13,Diya,Delhi,T-Shirt,Clothing,2,500,1000,UPI,Processing
+ORD-1024,2026-07-26,Vivaan,Mumbai,Laptop,Electronics,2,50000,100000,Net Banking,Processing
+ORD-1025,2026-07-31,Krishna,Chennai,Office Chair,Home,1,4000,4000,UPI,Delivered
+ORD-1026,2026-09-01,Atharv,Delhi,Desk Lamp,Home,3,800,2400,Net Banking,Processing
+ORD-1027,2026-08-13,Krishna,Delhi,Jacket,Clothing,2,3000,6000,Credit Card,Shipped
+ORD-1028,2026-07-19,Shaurya,Mumbai,Monitor,Electronics,3,8000,24000,Debit Card,Shipped
+ORD-1029,2026-09-06,Saanvi,Bengaluru,Monitor,Electronics,1,8000,8000,Debit Card,Processing
+ORD-1030,2026-06-21,Diya,Bengaluru,Coffee Maker,Home,1,2500,2500,Net Banking,Delivered
+ORD-1031,2026-07-25,Saanvi,Pune,Laptop,Electronics,4,50000,200000,Credit Card,Delivered
+ORD-1032,2026-07-14,Ayaan,Bengaluru,Office Chair,Home,4,4000,16000,Credit Card,Cancelled
+ORD-1033,2026-09-14,Aarav,Mumbai,Office Chair,Home,5,4000,20000,Credit Card,Delivered
+ORD-1034,2026-08-29,Vihaan,Mumbai,Smartphone,Electronics,1,20000,20000,Credit Card,Processing
+ORD-1035,2026-06-05,Sai,Pune,Headphones,Electronics,4,2000,8000,Net Banking,Processing
+ORD-1036,2026-06-08,Nandini,Delhi,Smartphone,Electronics,1,20000,20000,Debit Card,Delivered
+ORD-1037,2026-09-27,Aadhya,Bengaluru,Sneakers,Clothing,4,2500,10000,Debit Card,Delivered
+ORD-1038,2026-07-18,Nandini,Mumbai,Headphones,Electronics,5,2000,10000,UPI,Processing
+ORD-1039,2026-08-06,Reyansh,Hyderabad,Sneakers,Clothing,1,2500,2500,UPI,Delivered
+ORD-1040,2026-08-01,Vivaan,Bengaluru,Desk Lamp,Home,2,800,1600,Credit Card,Processing
+ORD-1041,2026-06-25,Arjun,Pune,Monitor,Electronics,4,8000,32000,Debit Card,Delivered
+ORD-1042,2026-08-21,Sai,Mumbai,Laptop,Electronics,5,50000,250000,UPI,Shipped
+ORD-1043,2026-09-24,Arjun,Pune,Desk Lamp,Home,5,800,4000,UPI,Processing
+ORD-1044,2026-09-01,Ayaan,Chennai,T-Shirt,Clothing,3,500,1500,UPI,Delivered
+ORD-1045,2026-06-01,Aanya,Pune,Sneakers,Clothing,3,2500,7500,Credit Card,Shipped
+ORD-1046,2026-07-10,Ishaan,Bengaluru,Jeans,Clothing,4,1500,6000,Credit Card,Delivered
+ORD-1047,2026-06-26,Krishna,Chennai,Jeans,Clothing,1,1500,1500,Credit Card,Cancelled
+ORD-1048,2026-07-02,Aanya,Pune,Jacket,Clothing,3,3000,9000,Credit Card,Processing
+ORD-1049,2026-08-10,Ishaan,Bengaluru,Coffee Maker,Home,4,2500,10000,Credit Card,Cancelled
+ORD-1050,2026-08-27,Aarav,Bengaluru,Sneakers,Clothing,4,2500,10000,Net Banking,Delivered
+ORD-1051,2026-08-09,Aarav,Chennai,Monitor,Electronics,5,8000,40000,Net Banking,Processing
+ORD-1052,2026-07-20,Sai,Chennai,Headphones,Electronics,3,2000,6000,UPI,Processing
+ORD-1053,2026-08-23,Vihaan,Hyderabad,Sneakers,Clothing,5,2500,12500,Debit Card,Delivered
+ORD-1054,2026-08-01,Aadhya,Bengaluru,Laptop,Electronics,2,50000,100000,Net Banking,Cancelled
+ORD-1055,2026-07-09,Krishna,Bengaluru,Smartphone,Electronics,2,20000,40000,UPI,Shipped
+ORD-1056,2026-06-17,Nandini,Chennai,Jeans,Clothing,3,1500,4500,Debit Card,Cancelled
+ORD-1057,2026-09-06,Vihaan,Bengaluru,Jacket,Clothing,5,3000,15000,Net Banking,Delivered
+ORD-1058,2026-08-16,Aditya,Delhi,Office Chair,Home,3,4000,12000,Credit Card,Delivered
+ORD-1059,2026-08-01,Aanya,Pune,Laptop,Electronics,5,50000,250000,Debit Card,Cancelled
+ORD-1060,2026-09-16,Pari,Bengaluru,Smartphone,Electronics,2,20000,40000,Credit Card,Cancelled
