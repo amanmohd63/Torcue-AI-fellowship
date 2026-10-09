@@ -129,11 +129,11 @@ available_functions = {
     "get_top_customer": get_top_customer,
 }
 
-system_prompt = \"\"\"You are the Order Assistant, an AI that helps users with their e-commerce store queries.
+system_prompt = """You are the Order Assistant, an AI that helps users with their e-commerce store queries.
 You have access to a dataset of 60 orders from June to September 2026.
 Use the provided tools to fetch order data and calculate metrics.
 Always answer politely and concisely. If a tool returns an error or no data, inform the user clearly.
-\"\"\"
+"""
 
 async def chat_with_agent(messages: list) -> str:
     # Ensure system prompt is present
