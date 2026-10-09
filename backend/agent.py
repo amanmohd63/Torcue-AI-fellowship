@@ -98,6 +98,10 @@ def get_dashboard_metrics() -> dict:
         "topCategory": top_category
     }
 
+def get_all_orders() -> list:
+    """Return all orders as a list of dicts for the frontend."""
+    return df.to_dict(orient="records")
+
 system_prompt = """You are the Order Assistant, an AI that helps users with their e-commerce store queries.
 You have access to a dataset of 60 orders from June to September 2026.
 Use the provided tools to fetch order data and calculate metrics.
