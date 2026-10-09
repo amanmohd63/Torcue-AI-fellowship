@@ -6,7 +6,7 @@ A full-stack web application with an AI assistant that answers questions about a
 
 - **Frontend**: React + Vite
 - **Backend**: Python + FastAPI
-- **AI Integration**: Gemini API (gemini-1.5-flash) with function calling
+- **AI Integration**: Gemini API (gemini-1.5-pro) with function calling
 - **Data processing**: Pandas (reading from `orders.csv`)
 
 ## Prerequisites

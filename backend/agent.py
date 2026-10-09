@@ -69,7 +69,7 @@ Always answer politely and concisely. If a tool returns an error or no data, inf
 
 # Initialize the model with the tools and system prompt
 model = genai.GenerativeModel(
-    model_name='gemini-1.5-flash',
+    model_name='gemini-1.5-pro',
     tools=[get_order_by_id, filter_orders, calculate_revenue, get_top_customer],
     system_instruction=system_prompt
 )
